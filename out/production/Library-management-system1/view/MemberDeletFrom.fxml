@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="651.0" prefWidth="921.0" style="-fx-background-color: linear-gradient(to top,#7C97DC, #FFFFFF); -fx-background-radius: 0px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MemberDeletFromController">
+   <children>
+      <Label layoutX="270.0" layoutY="14.0" prefHeight="47.0" prefWidth="481.0" text="Member Search From">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#Back" prefHeight="43.0" prefWidth="85.0" style="-fx-background-color: #60a3bc; -fx-background-radius: 35px;" text="back">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtMemberId" layoutX="32.0" layoutY="116.0" prefHeight="44.0" prefWidth="562.0" promptText="Enter Member Id">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="629.0" layoutY="116.0" onAction="#Search" prefHeight="58.0" prefWidth="215.0" style="-fx-background-color: green; -fx-background-radius: 35px;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font></JFXButton>
+      <Label layoutX="32.0" layoutY="216.0" prefHeight="40.0" prefWidth="254.0" text="Member ID            :">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="292.0" prefHeight="40.0" prefWidth="254.0" text="Member Name      :">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="363.0" prefHeight="40.0" prefWidth="254.0" text="Member Address   :">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="428.0" prefHeight="40.0" prefWidth="254.0" text="Member Contact   :">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="502.0" prefHeight="40.0" prefWidth="254.0" text="Member Age         :">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblId" layoutX="293.0" layoutY="207.0" prefHeight="58.0" prefWidth="321.0" textFill="#7c4f4f">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" layoutX="293.0" layoutY="283.0" prefHeight="58.0" prefWidth="321.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAddress" layoutX="293.0" layoutY="354.0" prefHeight="58.0" prefWidth="321.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblContact" layoutX="293.0" layoutY="419.0" prefHeight="58.0" prefWidth="321.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAge" layoutX="300.0" layoutY="493.0" prefHeight="58.0" prefWidth="321.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="787.0" layoutY="542.0" onAction="#onDelete" prefHeight="76.0" prefWidth="97.0" style="-fx-background-color: white; -fx-background-radius: 35px;">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="101.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pic/bin.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label layoutX="32.0" layoutY="560.0" prefHeight="40.0" prefWidth="254.0" text="Member Email      :">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEmail" layoutX="286.0" layoutY="551.0" prefHeight="58.0" prefWidth="431.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

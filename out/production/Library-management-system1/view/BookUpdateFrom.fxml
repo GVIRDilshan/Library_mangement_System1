@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="617.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.BookUpdateFromController">
+   <children>
+      <ImageView fitHeight="617.0" fitWidth="847.0" pickOnBounds="true">
+         <image>
+            <Image url="@../pic/book-library-with-open-textbook.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="344.0" layoutY="14.0" prefHeight="57.0" prefWidth="298.0" text="Book update From" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEnterId" layoutX="24.0" layoutY="141.0" prefHeight="57.0" prefWidth="584.0" promptText="Search Book ID" style="-fx-background-color: white;" unFocusColor="BLACK">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="629.0" layoutY="154.0" onAction="#Search" prefHeight="57.0" prefWidth="195.0" style="-fx-background-color: linear-gradient(to right,#403A3E, #BE5869); -fx-background-radius: 35;" text="Search" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="24.0" layoutY="293.0" prefHeight="57.0" prefWidth="161.0" text="Book ID" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="375.0" prefHeight="57.0" prefWidth="161.0" text="Book Name" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="457.0" prefHeight="57.0" prefWidth="161.0" text="Book Author" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="537.0" prefHeight="57.0" prefWidth="161.0" text="Book Price" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtBookId" layoutX="200.0" layoutY="271.0" prefHeight="50.0" prefWidth="408.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="24.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtBookName" layoutX="200.0" layoutY="366.0" prefHeight="50.0" prefWidth="408.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="24.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtBookAuthor" layoutX="200.0" layoutY="445.0" prefHeight="50.0" prefWidth="408.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="24.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtBookPrice" layoutX="200.0" layoutY="527.0" prefHeight="50.0" prefWidth="408.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="24.0" />
+         </font></JFXTextField>
+      <JFXButton layoutX="642.0" layoutY="495.0" onAction="#onUpdate" prefHeight="57.0" prefWidth="195.0" style="-fx-background-color: linear-gradient(to right,#403A3E, #BE5869); -fx-background-radius: 35;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#back" prefHeight="57.0" prefWidth="126.0" style="-fx-background-color: linear-gradient(to right,#403A3E, #BE5869); -fx-background-radius: 35;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

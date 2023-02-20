@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="597.0" prefWidth="913.0" style="-fx-background-color: linear-gradient(to top,#7C97DC, #FFFFFF);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.BookMainFromController">
+   <children>
+      <JFXButton layoutX="285.0" layoutY="52.0" onAction="#onAdd" prefHeight="91.0" prefWidth="310.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35px;" text="AddBook">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="285.0" layoutY="179.0" onAction="#onSearch" prefHeight="91.0" prefWidth="310.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35px;" text="SearchBook">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="285.0" layoutY="315.0" onAction="#onUpdate" prefHeight="91.0" prefWidth="310.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35px;" text="UpdateBook">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="285.0" layoutY="437.0" onAction="#onDelete" prefHeight="91.0" prefWidth="310.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35;" text="DeleteBook">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="21.0" onAction="#back" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 40px;" text="Back">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="719.0" prefWidth="1034.0" style="-fx-background-color: linear-gradient(to top,#7C97DC, #FFFFFF);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReturnFromController">
+   <children>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#back" prefHeight="64.0" prefWidth="109.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35;" text="Back">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtMemberID" layoutX="160.0" layoutY="147.0" prefHeight="64.0" prefWidth="539.0" promptText="Enter Member ID">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="245.0" layoutY="290.0" prefHeight="36.0" prefWidth="125.0" text="Name         :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="384.0" prefHeight="36.0" prefWidth="125.0" text="Book Id      :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="472.0" prefHeight="36.0" prefWidth="125.0" text="Isuse Date  :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="767.0" layoutY="147.0" onAction="#search" prefHeight="64.0" prefWidth="204.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 20;" text="Search">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="767.0" layoutY="612.0" onAction="#onReturn" prefHeight="64.0" prefWidth="204.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 20;" text="Return">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblName" layoutX="387.0" layoutY="287.0" prefHeight="47.0" prefWidth="333.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBookId" layoutX="387.0" layoutY="373.0" prefHeight="47.0" prefWidth="333.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblIsuseDate" layoutX="387.0" layoutY="466.0" prefHeight="47.0" prefWidth="333.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

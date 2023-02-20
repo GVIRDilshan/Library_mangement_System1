@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="688.0" prefWidth="1028.0" style="-fx-background-color: linear-gradient(to top,#7C97DC, #FFFFFF);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.FullChartFromController">
+   <children>
+      <AreaChart fx:id="lineChart" layoutX="11.0" layoutY="71.0" prefHeight="603.0" prefWidth="1007.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </AreaChart>
+      <JFXButton layoutX="21.0" layoutY="12.0" onAction="#Back" prefHeight="43.0" prefWidth="72.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF);" text="Back">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="388.0" layoutY="11.0" prefHeight="47.0" prefWidth="171.0" text="Line Chart">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

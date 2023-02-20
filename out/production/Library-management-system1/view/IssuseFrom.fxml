@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="639.0" prefWidth="885.0" style="-fx-background-color: linear-gradient(to top,#7C97DC, #FFFFFF);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.IssuseFromController">
+   <children>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#back" prefHeight="52.0" prefWidth="99.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35;" text="Back">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbMemberId" labelFloat="true" layoutX="14.0" layoutY="162.0" onAction="#onSelectMember" prefHeight="59.0" prefWidth="307.0" promptText="member Id" style="-fx-background-color: white;" />
+      <JFXComboBox fx:id="cmbBookId" labelFloat="true" layoutX="14.0" layoutY="276.0" onAction="#onSelectBook" prefHeight="59.0" prefWidth="307.0" promptText="Book Id" style="-fx-background-color: white;" />
+      <Label layoutX="340.0" layoutY="9.0" prefHeight="62.0" prefWidth="220.0" text="Issus From">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtIssuseId" layoutX="185.0" layoutY="437.0" prefHeight="52.0" prefWidth="169.0" promptText="Issuse Id" style="-fx-background-color: white;">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="671.0" layoutY="545.0" onAction="#onTake" prefHeight="62.0" prefWidth="143.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35;" text="Take">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtQty" layoutX="391.0" layoutY="437.0" prefHeight="52.0" prefWidth="169.0" promptText="Qty" style="-fx-background-color: white;">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="354.0" layoutY="172.0" prefHeight="39.0" prefWidth="99.0" text=" Name    :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="354.0" layoutY="286.0" prefHeight="39.0" prefWidth="99.0" text=" Name    :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMemberName" layoutX="457.0" layoutY="172.0" prefHeight="39.0" prefWidth="125.0" text=" d">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBookName" layoutX="457.0" layoutY="286.0" prefHeight="39.0" prefWidth="125.0" text="d">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="601.0" layoutY="172.0" prefHeight="39.0" prefWidth="99.0" text=" Contact :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMemberContact" layoutX="715.0" layoutY="172.0" prefHeight="39.0" prefWidth="169.0" text="c">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="601.0" layoutY="286.0" prefHeight="39.0" prefWidth="90.0" text="Qty   :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBookQty" layoutX="715.0" layoutY="286.0" prefHeight="39.0" prefWidth="108.0" text="Q">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="502.0" layoutY="540.0" onAction="#onVivew" prefHeight="70.0" prefWidth="134.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35;" text="viweAll Book" />
+   </children>
+</AnchorPane>

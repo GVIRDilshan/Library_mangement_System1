@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" onDragDetected="#onSearch" prefHeight="653.0" prefWidth="980.0" style="-fx-background-color: linear-gradient(to top,#7C97DC, #FFFFFF);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MemberMainFromController">
+   <children>
+      <JFXButton layoutX="120.0" layoutY="154.0" onAction="#onAdd" prefHeight="160.0" prefWidth="292.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35px;" text="AddFrom" textFill="WHITE">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="528.0" layoutY="154.0" onAction="#onSearch" prefHeight="160.0" prefWidth="292.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35px;" text="SearchFrom" textFill="WHITE">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="130.0" layoutY="387.0" onAction="#onUpdate" prefHeight="160.0" prefWidth="292.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35px;" text="UpdateFrom" textFill="WHITE">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="528.0" layoutY="387.0" onAction="#onDelete" prefHeight="160.0" prefWidth="292.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35px;" text="DeleteFrom" textFill="WHITE">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="14.0" layoutY="14.0" onAction="#Back" prefHeight="46.0" prefWidth="91.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 35px;" text="Back">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="321.0" layoutY="3.0" prefHeight="67.0" prefWidth="320.0" text="Member Controller">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
