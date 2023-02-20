@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0be0494-9030-4ef9-8277-c536cf7fa5d7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f0be0494-9030-4ef9-8277-c536cf7fa5d7" name="Changes" comment="new changes">
       <change beforePath="$PROJECT_DIR$/src/MailSystem/JavaMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MailSystem/JavaMail.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
   </component>
   <component name="ProjectId" id="2LC7HWJjsWkh4rSAlwNmrOlnsCG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -33,6 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../3uTools/Other/Library_Manegement_System11" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -129,11 +129,34 @@
       <workItem from="1676793980762" duration="10880000" />
       <workItem from="1676828133201" duration="367000" />
       <workItem from="1676828911805" duration="199000" />
-      <workItem from="1676907672124" duration="1283000" />
+      <workItem from="1676907672124" duration="2258000" />
     </task>
+    <task id="LOCAL-00001" summary="new changes">
+      <created>1676911553697</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676911553697</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="new changes" />
   </component>
 </project>
