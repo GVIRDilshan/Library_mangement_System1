@@ -4,6 +4,7 @@ import Notification.Alerts;
 import controller.BookController;
 import controller.IssuseController;
 import controller.MemberController;
+import controller.ReturnController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,8 +17,10 @@ import javafx.stage.Stage;
 import modal.Book;
 import modal.Issuse;
 import modal.Member;
+import modal.Returnss;
 
 import java.io.IOException;
+import java.time.LocalDate;
 
 public class ReturnFromController {
 
@@ -25,16 +28,28 @@ public class ReturnFromController {
     private AnchorPane root;
 
     @FXML
-    private TextField txtMemberID;
+    private TextField txtIssuseID;
 
     @FXML
-    private Label lblName;
+    private TextField txtReturnId;
 
     @FXML
-    private Label lblBookId;
+    private TextField txtReturnQty;
+
+    @FXML
+    private TextField txtBookId;
+
+    @FXML
+    private Label lblIssuseId;
+
+    @FXML
+    private Label lblMemberId;
 
     @FXML
     private Label lblIsuseDate;
+
+    @FXML
+    private Label lblBookID;
 
     @FXML
     void back(ActionEvent event) {
@@ -51,24 +66,41 @@ public class ReturnFromController {
 
     @FXML
     void onReturn(ActionEvent event) {
+        String IssuseId = txtIssuseID.getText();
+        String ReturnId = txtReturnId.getText();
+        String ReturnQty = txtReturnQty.getText();
+        String BookId = txtBookId.getText();
+        String IssuseDate = lblIsuseDate.getText();
 
 
+        Returnss returnss = new Returnss();
+        returnss.setIssuseId(IssuseId);
+        returnss.setReturnDate(String.valueOf(LocalDate.now()));
+        returnss.setReturnId(ReturnId);
+        returnss.setRreturnQty(ReturnQty);
+        returnss.setBookId(BookId);
+        returnss.setIssuseDate(IssuseDate);
 
+        System.out.println(returnss.getIssuseId()+" "+returnss.getReturnId()+" "+returnss.getRreturnQty()+" "+returnss.getReturnDate());
 
-        Alerts alerts =  new Alerts();
-        alerts.notification("Return Sucses......!", "Return");
-
+        boolean returnsed = ReturnController.ReturnSet(returnss);
+        System.out.println(returnsed);
     }
 
     @FXML
     void search(ActionEvent event) {
-        String searchId = txtMemberID.getText();
+        String searchId = txtIssuseID.getText();
 
         Issuse issuse = IssuseController.IssuseSearch(searchId);
 
-        lblName.setText(issuse.getIssusId());
+        Book book =  new Book();
+
+        lblIssuseId.setText(issuse.getIssusId());
         lblIsuseDate.setText(issuse.getIssusDate());
-        lblBookId.setText(issuse.getMemberId());
+        lblMemberId.setText(issuse.getMemberId());
+        lblBookID.setText(issuse.getBookId());
+
+       // lblQty.setText(String.valueOf(book.getQty()));
 
 //        Member member = MemberController.searchFrom(txtMemberID.getText());
 //        Issuse issuse = IssuseController.IssuseSearch(txtMemberID.getText());
