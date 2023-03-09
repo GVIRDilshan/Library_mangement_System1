@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0be0494-9030-4ef9-8277-c536cf7fa5d7" name="Changes" comment="new changes">
-      <change beforePath="$PROJECT_DIR$/src/MailSystem/JavaMail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MailSystem/JavaMail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2LC7HWJjsWkh4rSAlwNmrOlnsCG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -42,6 +42,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -130,6 +131,7 @@
       <workItem from="1676828133201" duration="367000" />
       <workItem from="1676828911805" duration="199000" />
       <workItem from="1676907672124" duration="2258000" />
+      <workItem from="1678348233909" duration="411000" />
     </task>
     <task id="LOCAL-00001" summary="new changes">
       <created>1676911553697</created>
@@ -154,6 +156,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new changes" />
