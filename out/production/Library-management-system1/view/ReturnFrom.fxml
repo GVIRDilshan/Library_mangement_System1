@@ -17,7 +17,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <TextField fx:id="txtMemberID" layoutX="160.0" layoutY="147.0" prefHeight="64.0" prefWidth="539.0" promptText="Enter Member ID">
+      <TextField fx:id="txtIssuseID" layoutX="32.0" layoutY="124.0" prefHeight="64.0" prefWidth="539.0" promptText="Enter Issuse ID">
          <font>
             <Font name="System Bold" size="23.0" />
          </font>
@@ -25,22 +25,22 @@
             <Cursor fx:constant="TEXT" />
          </cursor>
       </TextField>
-      <Label layoutX="245.0" layoutY="290.0" prefHeight="36.0" prefWidth="125.0" text="Name         :">
+      <Label layoutX="57.0" layoutY="249.0" prefHeight="36.0" prefWidth="133.0" text="Issuse ID      :">
          <font>
             <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="245.0" layoutY="384.0" prefHeight="36.0" prefWidth="125.0" text="Book Id      :">
+      <Label layoutX="57.0" layoutY="325.0" prefHeight="36.0" prefWidth="133.0" text="Member ID  :">
          <font>
             <Font size="22.0" />
          </font>
       </Label>
-      <Label layoutX="245.0" layoutY="472.0" prefHeight="36.0" prefWidth="125.0" text="Isuse Date  :">
+      <Label layoutX="57.0" layoutY="392.0" prefHeight="36.0" prefWidth="133.0" text="Isuse Date   :">
          <font>
             <Font size="22.0" />
          </font>
       </Label>
-      <JFXButton layoutX="767.0" layoutY="147.0" onAction="#search" prefHeight="64.0" prefWidth="204.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 20;" text="Search">
+      <JFXButton layoutX="618.0" layoutY="124.0" onAction="#search" prefHeight="64.0" prefWidth="204.0" style="-fx-background-color: linear-gradient(to right,#7C97DC, #5AD7FF); -fx-background-radius: 20;" text="Search">
          <font>
             <Font size="29.0" />
          </font>
@@ -56,20 +56,59 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </JFXButton>
-      <Label fx:id="lblName" layoutX="387.0" layoutY="287.0" prefHeight="47.0" prefWidth="333.0">
+      <Label fx:id="lblIssuseId" layoutX="212.0" layoutY="243.0" prefHeight="47.0" prefWidth="333.0">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lblBookId" layoutX="387.0" layoutY="373.0" prefHeight="47.0" prefWidth="333.0">
+      <Label fx:id="lblMemberId" layoutX="212.0" layoutY="319.0" prefHeight="47.0" prefWidth="333.0">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label fx:id="lblIsuseDate" layoutX="387.0" layoutY="466.0" prefHeight="47.0" prefWidth="333.0">
+      <Label fx:id="lblIsuseDate" layoutX="213.0" layoutY="387.0" prefHeight="47.0" prefWidth="333.0">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
+      <TextField fx:id="txtReturnId" layoutX="272.0" layoutY="536.0" prefHeight="64.0" prefWidth="214.0" promptText="Return ID">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="404.0" layoutY="6.0" prefHeight="62.0" prefWidth="262.0" text="Return From">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="459.0" prefHeight="36.0" prefWidth="133.0" text="Book ID       :">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBookID" layoutX="212.0" layoutY="454.0" prefHeight="47.0" prefWidth="333.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtReturnQty" layoutX="511.0" layoutY="536.0" prefHeight="64.0" prefWidth="214.0" promptText="Return Qty">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtBookId" layoutX="32.0" layoutY="536.0" prefHeight="64.0" prefWidth="214.0" promptText="Book Id">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
    </children>
 </AnchorPane>
